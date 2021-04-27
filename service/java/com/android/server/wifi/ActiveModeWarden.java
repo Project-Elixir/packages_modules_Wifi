@@ -2307,6 +2307,9 @@ public class ActiveModeWarden {
         return a != null ? a : b;
     }
 
+    public void registerStaEventCallback() {}
+    public void unregisterStaEventCallback() {}
+
     /**
      * Check if CMM is connecting or connected to target BSSID and SSID
      */

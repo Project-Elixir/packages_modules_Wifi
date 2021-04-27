@@ -24,6 +24,7 @@ import android.net.Network;
 import android.net.wifi.hotspot2.IProvisioningCallback;
 import android.net.wifi.hotspot2.OsuProvider;
 import android.net.wifi.hotspot2.PasspointConfiguration;
+import android.net.wifi.IStaStateCallback;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.RemoteException;
@@ -855,6 +856,17 @@ public class BaseWifiService extends IWifiManager.Stub {
     @Override
     public List<WifiAvailableChannel> getUsableChannels(
             int band, int mode, int filter) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void registerStaStateCallback(
+            IBinder binder, IStaStateCallback callback, int callbackIdentifier) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void unregisterStaStateCallback(int callbackIdentifier) {
         throw new UnsupportedOperationException();
     }
 
