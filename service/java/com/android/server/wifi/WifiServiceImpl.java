@@ -270,6 +270,8 @@ public class WifiServiceImpl extends BaseWifiService {
 
     private final DefaultClientModeManager mDefaultClientModeManager;
 
+    private boolean mVerboseLoggingEnabled = false;
+
     @VisibleForTesting
     public final CountryCodeTracker mCountryCodeTracker;
     private final MultiInternetManager mMultiInternetManager;
