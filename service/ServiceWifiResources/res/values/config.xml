@@ -957,7 +957,7 @@
     <!-- Whether to allow Settings or SUW to create insecure Enterprise networks where server
          certificate is not validated, by not specifying a Root CA certificate and/or server domain
          name. It is STRONGLY RECOMMENDED to be set to false -->
-    <bool translatable="false" name="config_wifiAllowInsecureEnterpriseConfigurationsForSettingsAndSUW">false</bool>
+    <bool translatable="false" name="config_wifiAllowInsecureEnterpriseConfigurationsForSettingsAndSUW">true</bool>
 
     <!-- Indicate the max lines for connectivity local log based on the device ram size -->
     <integer translatable="false" name="config_wifiConnectivityLocalLogMaxLinesLowRam">256</integer>
